@@ -1,5 +1,4 @@
-# pizza
-Installation:
+# Installation:
 
 Clone this git repository:
 
