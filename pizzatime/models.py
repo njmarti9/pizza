@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Toppings have 1 string = name
 class Topping(models.Model):
     name = models.CharField(max_length=40, unique=True)
     
@@ -10,6 +10,7 @@ class Topping(models.Model):
     def __str__(self):
         return self.name
 
+# Pizza has 1 string = name, and 1 list of toppings
 class Pizza(models.Model):
     specialty = models.CharField(max_length=40, unique=True)
     toppings = models.ManyToManyField(Topping)

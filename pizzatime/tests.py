@@ -33,6 +33,7 @@ class DupToppingTestCase(TestCase):
         except:
             print("Duplicate toppings, can't be made")
 
+# Tests updating and deleting toppings
 class UpdateAndDeleteToppingTestCase(TestCase):
     def setUp(self):
         pass
@@ -57,6 +58,7 @@ class UpdateAndDeleteToppingTestCase(TestCase):
         except:
             print(list(Topping.objects.all().values_list('name', flat=True)))
 
+# Tests updating a topping to an existing topping
 class UpdateDuplicateToppingTestCase(TestCase):
     def setUp(self):
         pass
@@ -76,7 +78,7 @@ class UpdateDuplicateToppingTestCase(TestCase):
         except:
             print("Not Unique, can't update")
 
-
+# Tests full functionality of Pizzas
 class CreatePizzaTestCase(TestCase):
     def setUp(self):
         pass
@@ -131,11 +133,3 @@ class CreatePizzaTestCase(TestCase):
         except:
             print("Pizza does not exist")
             pass
-        
-
-        
-            
-        
-        
-
-        
