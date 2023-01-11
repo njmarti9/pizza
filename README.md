@@ -31,11 +31,15 @@ When the server is deployed append '/admin' to the end of the url provided.
 To access the site, use the different accounts for the various functions.
 
 Chef Account:
+
 Username: chef
+
 Password: Whatever123
 
 Owner Account:
+
 Username: Owner
+
 Password: Whatever123
 
 The Chef can construct various specialty pizzas with the toppings the owner has made available.
@@ -43,7 +47,9 @@ The Chef can construct various specialty pizzas with the toppings the owner has 
 If you would like to test all the functionality without logging in and out of various accounts you can use the account below.
 
 Admin Account:
+
 Username: admin
+
 Password: 1234
 
 # Improvements that I would make
